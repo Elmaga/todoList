@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.todo {
+  margin: 400px auto;
+  width: 500px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  position: relative;
+  border-radius: 20px;
+}
+
+.todo__header {
+  background-color: #2ecc71;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px 20px 0 0;
+}
+
+.todo__form {
+  padding: 10px 5px 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo__form input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  border-radius: 20px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  padding: 5px 11px;
+  font-size: 19px;
+}
+
+.todo__menu {
+  position: absolute;
+  right: -60px;
+  top: 120px;
+  background: #ffffff;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+.todo__menu.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.todo__menu-link {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 45px 10px 15px;
+}
+
+.todo__menu-link.active {
+  background-image: url("../img/2.svg");
+  background-size: 15px;
+  background-position: bottom 15px right 15px;
+  background-repeat: no-repeat;
+}
+
+.todo__menu-link:hover {
+  background-color: rgba(34, 60, 80, 0.2);
+}
+
+.todo__add {
+  background: 0;
+  border: 0;
+  background-color: #34495e;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.todo__filter {
+  width: 10%;
+  height: 25px;
+  width: 25px;
+  margin-left: 5px;
+}
+
+.todo__filter svg {
+  width: 25px;
+  height: 25px;
+}
+
+.todo__content {
+  padding: 0 15px 5px;
+}
+
+.todo__item.checked-item span {
+  text-decoration: underline;
+}
+
+.todo__date {
+  text-decoration: none !important;
+}
+
+.todo__checkbox {
+  margin-right: 20px;
+}
+/*# sourceMappingURL=style.css.map */
